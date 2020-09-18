@@ -37,7 +37,7 @@
 * [Purr - simple analogue of Trello](https://github.com/AlksAlena/purr)
 
 ### Code
-```
+```javascript
 function Game(desk, timer, popup) {
     this.desk = desk;
     this.cardsList = [];
