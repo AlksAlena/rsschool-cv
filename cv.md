@@ -26,6 +26,11 @@
 * Attention to detail
 * Ability for independent work and learning
 
+### Education
+- [x] NSTU - Novosibirsk State Technical University
+- [x] Coursera.org: HTML, CSS, JS, Angular, Bootstrap courses
+- [ ] RS school
+
 ### Code
 ```
 function Game(desk, timer, popup) {
