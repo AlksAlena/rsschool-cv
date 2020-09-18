@@ -31,6 +31,11 @@
 - [x] Coursera.org: HTML, CSS, JS, Angular, Bootstrap courses
 - [ ] RS school
 
+### Projects
+* [Emodji Game](https://github.com/AlksAlena/frontend_specialization/tree/master/Capstone%20project)
+* [ConFusion App](https://github.com/AlksAlena/fullstack_specialization/tree/master/angular%20practice/conFusion)
+* [Purr - simple analogue of Trello](https://github.com/AlksAlena/purr)
+
 ### Code
 ```
 function Game(desk, timer, popup) {
