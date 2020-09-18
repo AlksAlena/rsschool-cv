@@ -20,10 +20,10 @@
 | Docker | 3/5 |
 
 ### Soft skills
-* Коммуникабельная
-* Ответственная
-* Внимательная к деталям
-* Способная к самостоятельной работе и обучению
+* Communicability
+* Responsibility
+* Attention to detail
+* Ability for independent work and learning
 
 ### Contacts
 * [LinkedIn](https://www.linkedin.com/)
