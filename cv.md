@@ -26,6 +26,59 @@
 * Attention to detail
 * Ability for independent work and learning
 
+### Code
+```
+function Game(desk, timer, popup) {
+    this.desk = desk;
+    this.cardsList = [];
+    this.timer = timer;
+    this.popup = popup;
+    this.isWin = false;
+    this.init =  function(emodji) {
+      var setEmodji = emodji.concat(emodji); // 12 icons
+      var cards = this.desk.querySelectorAll('.card_container');
+      for (var i = 0; i < cards.length; i++) {
+        var icon = this.setContent(setEmodji);
+        this.cardsList[i] = new Card(cards[i], i, icon);
+      }
+    };
+    this.setContent = function(setEmodji) {
+      var randomNumber = Math.floor(Math.random() * 10000) % setEmodji.length;
+      var icon = setEmodji.splice(randomNumber, 1)[0];
+      return icon;
+    };
+    this.togglePopup = function(result) {
+      var message = '', text = '';
+      this.popup.classList.toggle('active');
+      if (result) {
+        text = 'Win';
+        for (var i = 0; i < 3; i++) {
+          message += '<span class="message-win">' + text[i] + '</span>';
+        }
+      } else {
+        text = 'Lose';
+        for (var i = 0; i < 4; i++) {
+          message += '<span class="message-lose">' + text[i] + '</span>';
+        }
+      }
+      this.popup.firstElementChild.firstElementChild.innerHTML = message;
+    };
+    this.rePlay = function(emodji) {
+      this.togglePopup();
+      this.isWin = false;
+      this.timer.innerHTML = '01:00';
+      this.cardsList.forEach(function(item) {
+        var card = item.elem.lastElementChild;
+        if (item.isOpen) item.rotate();
+        if (card.classList.contains('unequal')) card.classList.remove('unequal');
+        if (card.classList.contains('equal')) card.classList.remove('equal');
+      });
+      this.cardsList = [];
+      this.init(emodji);
+    }
+  }
+```
+
 ### Contacts
 * [LinkedIn](https://www.linkedin.com/)
 * <fake@example.com>
