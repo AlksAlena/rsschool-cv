@@ -18,6 +18,7 @@
 | Swagger | 3/5 |
 | Git | 3/5 |
 | Docker | 3/5 |
+| English | A1 |
 
 ### Soft skills
 * Communicability
