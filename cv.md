@@ -1,5 +1,6 @@
 # Alyona Eley
 ## Frontend developer
+![free avatar from photo stock](https://cdn.pixabay.com/photo/2016/04/26/07/57/woman-1353825_960_720.png)
 
 ### My motto
 > My dear, here we must run as fast as we can, just to stay in place.  
