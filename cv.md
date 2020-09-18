@@ -23,3 +23,8 @@
 * Ответственная
 * Внимательная к деталям
 * Способная к самостоятельной работе и обучению
+
+### Contacts
+* [LinkedIn](https://www.linkedin.com/)
+* <fake@example.com>
+* [GitHub](github.com/alksalena)
