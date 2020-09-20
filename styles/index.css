@@ -15,14 +15,14 @@ body {
 }
 .header-about {
   flex: 1;
-  padding: 20px 40px;
+  padding: 40px;
   text-align: center;
 }
 .header-about_name {
   font-size: 3em;
   letter-spacing: .05em;
   font-weight: 600;
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 .header-about_position {
