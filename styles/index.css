@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #c2c6c9;
+}
+.container {
+  width: 900px;
+  margin: auto;
+  background-color: #fff;
+}
+.header {
+  display: flex;
+}
+.header-about {
+  flex: 1;
+  padding: 20px 40px;
+  text-align: center;
+}
+.header-about_name {
+  font-size: 3em;
+  letter-spacing: .05em;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.header-about_position {
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+.header-about_quote {
+  text-align: left;
+  margin-bottom: 0;
+}
+.header-about_quote footer {
+  text-align: right;
+  font-weight: 500;
+}
