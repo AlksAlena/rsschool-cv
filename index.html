@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Title</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-about">
+        <p class="header-about_name">Alyona Eley</p>
+        <p class="header-about_position">Fronted developer</p>
+        <blockquote class="header-about_quote" cite="https://www.goodreads.com/quotes/458856-my-dear-here-we-must-run-as-fast-as-we">
+          <p>&#8220;My dear, here we must run as fast as we can, just to stay in place.
+            And if you wish to go anywhere you must run twice as fast as that.&#8221;</p>
+          <footer>—Lewis Carroll, <cite>Alice in Wonderland</cite></footer>
+        </blockquote>
+      </div>
+      <div class="header-photo">
+        <img src="images/photo.jpeg" alt="Woman's photo from free photo stock" width="350">
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <article class="article">
+          <h2>Hard Skills</h2>
+          <ul class="hard-skills">
+            <li class="hard-skill">
+              <span class="skill-name">HTML/HTML5</span>
+              <div class="skill-level"><span class="skill-html"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">CSS/CSS3</span>
+              <div class="skill-level"><span class="skill-css"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">JS/TS</span>
+              <div class="skill-level"><span class="skill-js"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">Angular</span>
+              <div class="skill-level"><span class="skill-angular"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">RESTful</span>
+              <div class="skill-level"><span class="skill-rest"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">Swagger</span>
+              <div class="skill-level"><span class="skill-swagger"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">Git</span>
+              <div class="skill-level"><span class="skill-git"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">Docker</span>
+              <div class="skill-level"><span class="skill-docker"></span></div>
+            </li>
+            <li class="hard-skill">
+              <span class="skill-name">English</span>
+              <div class="skill-level"><span class="skill-english"></span></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="article">
+          <h2>Soft Skills</h2>
+          <ul class="soft-skills">
+            <li class="soft-skill">
+              <div class="circle communication"></div>
+            </li>
+            <li class="soft-skill">
+              <div class="circle analyzing"></div>
+            </li>
+            <li class="soft-skill">
+              <div class="circle planning"></div>
+            </li>
+            <li class="soft-skill">
+              <div class="circle development"></div>
+            </li>
+            <li class="soft-skill">
+              <div class="circle creativity"></div>
+            </li>
+          </ul>
+        </article>
+
+        <aside class="education">
+          <h2>Education</h2>
+          <ul>
+            <li>NSTU - Novosibirsk State Technical University</li>
+            <li>Coursera.org: HTML, CSS, JS, Angular, Bootstrap courses</li>
+            <li>RS school</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="code">
+        <h2>Code Example</h2>
+        <pre class="code-example">
+          <code>
+      function Game(desk, timer, popup) {
+        this.desk = desk;
+        this.cardList = [];
+        this.timer = timer;
+        this.popup = popup;
+        this.isWin = false;
+        this.init =  function(emodji) {
+          var setEmodji = emodji.concat(emodji); // 12 icons
+          var cards = this.desk.querySelectorAll('.card_container');
+          for (var i = 0; i < cards.length; i++) {
+            var icon = this.setContent(setEmodji);
+            this.cardList[i] = new Card(cards[i], i, icon);
+          }
+        };
+        this.setContent = function(setEmodji) {
+          var randomNumber = Math.floor(Math.random() * 10000) % setEmodji.length;
+          var icon = setEmodji.splice(randomNumber, 1)[0];
+          return icon;
+        };
+        this.togglePopup = function(result) {
+          var message = '', text = '';
+          this.popup.classList.toggle('active');
+          if (result) {
+            text = 'Win';
+            for (var i = 0; i < 3; i++) {
+              message += '<span class="message-win">' + text[i] + '</span>';
+            }
+          } else {
+            text = 'Lose';
+            for (var i = 0; i < 4; i++) {
+              message += '<span class="message-lose">' + text[i] + '</span>';
+            }
+          }
+          this.popup.firstElementChild.firstElementChild.innerHTML = message;
+        };
+        this.rePlay = function(emodji) {
+          this.togglePopup();
+          this.isWin = false;
+          this.timer.innerHTML = '01:00';
+          this.cardList.forEach(function(item) {
+            var card = item.elem.lastElementChild;
+            if (item.isOpen) item.rotate();
+            if (card.classList.contains('unequal')) card.classList.remove('unequal');
+            if (card.classList.contains('equal')) card.classList.remove('equal');
+          });
+          this.cardList = [];
+          this.init(emodji);
+        }
+      }
+          </code>
+        </pre>
+      </section>
+    </main>
+
+    <footer class="contacts">
+      <h2>Contacts</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        <li><a href="mailto:fake@example.com">Email</a></li>
+        <li><a href="//github.com/alksalena">GitHub</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+</html>
