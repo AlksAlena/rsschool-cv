@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding: 30px 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #c2c6c9;
+}
+.container {
+  width: 900px;
+  margin: auto;
+  background-color: #fff;
+}
+.header {
+  display: flex;
+  box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+}
+.header-about {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+.header-about_name {
+  font-size: 3em;
+  letter-spacing: .05em;
+  font-weight: 600;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.header-about_position {
+  font-size: 1.7em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+.header-about_quote {
+  text-align: left;
+  margin-bottom: 0;
+}
+.header-about_quote footer {
+  text-align: right;
+  font-weight: 500;
+}
+.section {
+  padding: 20px 0;
+}
+.article {
+  width: calc(100% - 350px);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.article:nth-child(2) {
+  background-color: #eee;
+  width: 100%;
+}
+.hard-skills,
+.soft-skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.hard-skill {
+  padding: 10px;
+  display: flex;
+}
+.skill-name {
+  width: 115px;
+  margin-right: 5px;
+}
+.skill-level {
+  width: calc(100% - 120px);
+  height: 15px;
+}
+.skill-html,
+.skill-css,
+.skill-js,
+.skill-angular,
+.skill-rest,
+.skill-swagger,
+.skill-git,
+.skill-english,
+.skill-docker {
+  display: inline-block;
+  height: 100%;
+  background-color: #00c4cc;
+}
+
+.skill-html { width: 85%; }
+.skill-css { width: 85%; }
+.skill-js { width: 92%; }
+.skill-angular { width: 85%; }
+.skill-rest { width: 56%; }
+.skill-swagger { width: 45%; }
+.skill-git { width: 47%; }
+.skill-english { width: 30%; }
+.skill-docker { width: 27%; }
+
+.soft-skills {
+  display: flex;
+  justify-content: space-around;
+}
+.soft-skill {
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  background-color: lightblue;
+  border-radius: 50%;
+}
+.circle {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+.communication {
+  background-image: url(https://img.icons8.com/dusk/452/communication-skill.png);
+}
+.analyzing {
+  background-image: url(https://img.icons8.com/dusk/452/analyzing-skill.png);
+}
+.planning {
+  background-image: url(https://img.icons8.com/dusk/452/planning-skill.png);
+}
+.development {
+  background-image: url(https://img.icons8.com/dusk/452/development-skill.png);
+}
+.creativity {
+  background-image: url(https://img.icons8.com/dusk/452/brainstorm-skill.png);
+}
+.education,
+.code,
+.code-example,
+.contacts {
+  margin: 40px 20px;
+}
+.code-example {
+  border: 2px solid rgba(0,0,0,.3);
+}
+.contacts {
+  padding-bottom: 40px;
+}
